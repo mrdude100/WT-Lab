@@ -1,143 +1,63 @@
-* {
+*{
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Roboto", "Noto Sans", "Helvetica", sans-serif;
-  font-size: 14px;
-  background-color: #3498DB;
-  height: 100%;
-}
 
-.calculator {
-  width: 350px;
-  height: auto;
-  margin: 70px auto 0;
-  overflow: hidden;
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
-}
-
-.calculator span {
-  -moz-user-select: none;
-  user-select: none;
-}
-
-.top {
-  position: relative;
-  height: 150px;
-  background-color: white;
-}
-
-.top .unit {
-  text-transform: uppercase;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-weight: 700;
-  color: #757575;
-}
-
-.top .screen {
-  position: relative;
+.container{
   width: 100%;
-  top: 20%;
-  height: 80%;
-}
-
-.screen > div  {
+  height: 100vh;
+  background: #e3f9ff;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  padding: 5px;
-  text-align: right;
+  justify-content: center;
 }
-
-.screen .input {
-  color: #757575;
-  height: 60%;
-  font-size: 35px;
+.calculator{
+  background: #3a4452;
+  padding: 20px;
+  border-radius: 10px;
 }
-
-.screen .result {
-  color: #9e9e9e;
+.calculator form input{
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
   font-size: 20px;
-  height: 40%;
-}
-
-.bottom {
-  background-color: #2D2D2D;
-  height: 300px;
   color: #fff;
   cursor: pointer;
+  margin: 10px;
 }
 
-.bottom section {
-  position: relative;
-  height: 100%;
-  float: left;
+form .display{
   display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+form .display input{
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+form input.equal{
+  width: 145px;
 }
 
-.keys {
-  width: 80%;
+
+
+form input.operator{
+  color: #33ffd8;
 }
 
 
-.keys .column {
-  display: flex;
-  flex-grow: 1;
-}
 
-.keys .column, .operators {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.keys .column span, .operators span {
-  position: relative;
-  overflow: hidden;
-  flex-grow: 1;
-  width: 100%;
-  line-height: 1;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.5s;
-}
 
-.keys .column span {
-  font-size: 25px;
-}
 
-.keys .column span:hover, .operators span:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
-.operators {
-  width: 20%;
-  font-size: 18px;
-  background-color: #434343;
-}
 
-.delete {
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.credit {
-  display: block;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  bottom: 20px;
-  margin: 0 auto;
-}
-
-.credit a, .error {
-  color: #C2185B;
-}
