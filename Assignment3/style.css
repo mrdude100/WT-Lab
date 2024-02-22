@@ -7,15 +7,22 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    background-color: #55d6aa;
+    background-color: #000000;
 }
 
 
+
 header {
-    background-color: #211836;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-optical-sizing: auto;
+    font-style:  normal;
+
+
 }
 
 
@@ -32,20 +39,23 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 img {
-    width: 500px;
+    width: 600px;
     border-radius: 10px;
     transition-duration: 200ms;
 }
 img:hover {
-    scale: 1.025;
+    scale: 1.05;
 }
 
 .video-section {
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 .message-section {
@@ -53,6 +63,10 @@ img:hover {
     margin-bottom: 20px;
     background-color: #f9f9f9;
     padding: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    font-style:  normal;
 
 }
 
@@ -67,7 +81,7 @@ img:hover {
     background-color: #333;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .links-section a:hover {
@@ -80,4 +94,7 @@ footer {
     padding: 10px 0;
     background-color: #333;
     color: #fff;
+    background-image: linear-gradient(to right, purple, blue);
+    font-size: 23px;
+    font-family: "Raleway", sans-serif;
 }
